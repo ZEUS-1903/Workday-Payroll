@@ -1,8 +1,8 @@
-# Workday Payroll Validator - Learning Project
+# Workday Payroll Validator Project
 
 A quick MVP project to learn Workday API integration patterns by building a payroll validator that compares Workday employee data against a legacy HR system.
 
-## 📚 What You'll Learn
+##  What You'll Learn
 
 This project teaches you:
 
@@ -13,7 +13,7 @@ This project teaches you:
 - **Frontend with Vanilla JS**: Displaying complex data in an interactive UI
 - **Real-World Patterns**: How enterprise systems handle payroll data integration
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 workday-payroll-validator/
@@ -24,7 +24,7 @@ workday-payroll-validator/
 └── README.md            # This file
 ```
 
-## 🔧 How It Works
+## How It Works
 
 ### 1. **Mock Workday API** (`/api/workday/*`)
 Simulates Workday REST endpoints:
@@ -48,7 +48,7 @@ The core logic that:
 - Assigns severity levels (HIGH, MEDIUM, LOW)
 - Sorts results for easy review
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Install Dependencies
 ```bash
@@ -63,8 +63,8 @@ npm start
 
 Output:
 ```
-✅ Payroll Validator Server Running
-📍 Open http://localhost:3000 in your browser
+ Payroll Validator Server Running
+ Open http://localhost:3000 in your browser
 ```
 
 ### 3. Open in Browser
@@ -72,7 +72,7 @@ Output:
 - Click "Run Validation"
 - View results in tabs
 
-## 📊 Sample Data
+##  Sample Data
 
 The project includes **5 employees** with intentional discrepancies:
 
@@ -83,7 +83,7 @@ The project includes **5 employees** with intentional discrepancies:
 | Diana Wilson | Department Name | department | Analytics | Data |
 | Eve Martinez | Status Mismatch | status | Active | Inactive |
 
-## 📋 API Examples
+##  API Examples
 
 ### Fetch Workday Employees
 ```bash
@@ -147,7 +147,7 @@ Response:
 }
 ```
 
-## 🎓 Key Concepts Explained
+##  Key Concepts Explained
 
 ### Severity Levels
 - **HIGH**: Critical issues (salary mismatches, status problems)
@@ -159,14 +159,14 @@ Response:
 - `MISSING_IN_LEGACY`: Record in Workday but not in Legacy HR
 - `EXTRA_IN_LEGACY`: Record in Legacy HR but not in Workday
 
-## 🔍 Validation Logic
+##  Validation Logic
 
 The validator checks:
 1. **Record existence** - Do all employees exist in both systems?
 2. **Field matching** - Are name, email, salary, position, department, status the same?
 3. **Severity assessment** - How critical is each discrepancy?
 
-## 💡 What to Try Next
+##  What to Try Next
 
 1. **Add more fields** to validation (hire date, benefits, etc.)
 2. **Create export feature** (CSV/JSON of discrepancies)
@@ -175,7 +175,7 @@ The validator checks:
 5. **Add real Workday API** credentials to connect to actual data
 6. **Implement scheduling** to run validation daily
 
-## 🔐 Real Workday Integration (Future)
+##  Real Workday Integration (Future)
 
 When ready to use real Workday data, you'd:
 
@@ -198,7 +198,7 @@ async function getWorkdayEmployees() {
 }
 ```
 
-## 📚 Resources
+##  Resources
 
 - [Workday REST API Documentation](https://docs.workday.com)
 - [Express.js Guide](https://expressjs.com)
@@ -206,6 +206,6 @@ async function getWorkdayEmployees() {
 
 ---
 
-**Happy Learning! 🚀**
+**Happy Learning!**
 
 Built for understanding Workday integration patterns and enterprise data validation.
